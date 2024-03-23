@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkat's web design services</title>
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+         <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#mainCoantiner">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">VENKAT'S WEB DESIGN SERVICES</a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#About">About</a></li>
+      <li class="hideOnMobile"><a href="#Services">Services</a></li>
+      <li class="hideOnMobile"><a href="#Portfolio">Portfolio</a></li>
+        <li class="hideOnMobile"><a href="#mainCoantiner">Pricing</a></li>
+      <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  
+  <section class="hero">
+    
+    <h1><span class="clr">Welcome</span> to Our Service</h1>
+    <p class="para">Making attractive websites here.</p>
+    <a href="#services" class="cta-button">Explore Services</a>
+  </section>
+  
+
+  
+  <script>
+  function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+}
+
+$(document).ready(function() {
+  // Toggle navbar visibility on menu button click
+  $('.menu-button').click(function() {
+    $('nav').toggleClass('active');
+  });
+
+  // Close navbar when a nav link is clicked
+  $('nav a').click(function() {
+    $('nav').removeClass('active');
+  });
+});
+
+
+
+
+  </script>
+  
+  
+  <!-- About section -->
+<!--  <div class="">
+  <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709450854/IMG_20240303_125531_auhotx.jpg"></div>-->
+   <section class="about" id="About">
+    <h1 style="color: yellow; font-weight: 500; font-family: Arial, Helvetica, sans-serif; font-size:30px;">About Us</h1>
+    <h2>Welcome to Venkat's Web design services Where Creativity Meets Functionality!</h2>
+    <p>At Venkat's Web Design Services , we are passionate about transforming ideas into visually stunning and highly functional websites. With a commitment to excellence and innovation, we take pride in creating online experiences that captivate, engage, and leave a lasting impression.</p>
+  </section>
+
+  
+
+
+<!-- services section -->
+    
+    <section class="services show" id="Services">
+      <div class="row">
+        <h2 class="heading" style="color: yellow; font-size: 30px; font-weight: 500;">Our Services</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+           <i class='bx bx-window-alt' ></i>
+            </div>
+            <h3>Web designing</h3>
+            <p>
+              Creating tailored websites for clients, merging design finesse with user-centric functionality to elevate their online presence.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+            <i class='bx bxl-wordpress' ></i>
+            </div>
+            <h3>WordPress</h3>
+            <p>
+              Providing WordPress services, specializing in customizable website solutions to empower businesses with a user-friendly and scalable online presence.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+          <i class='bx bxl-blogger' ></i>
+            </div>
+            <h3>Blogger</h3>
+            <p>
+              Elevate your online presence with my personalized blogger service, crafting engaging content to captivate your audience.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+         <i class='bx bxs-videos' ></i>
+            </div>
+            <h3>Video editing</h3>
+            <p>
+             Elevate your content with professional video editing services—transforming raw footage into polished, engaging visuals that captivate your audience.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+            <i class='bx bxs-photo-album' ></i>
+            </div>
+            <h3>Photo editing</h3>
+            <p>
+            Elevate your visuals with my photo editing service, transforming ordinary images into captivating masterpieces.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+        <i class='bx bx-message-rounded-dots'></i>
+            </div>
+            <h3>Continuous support</h3>
+            <p>
+              Providing ongoing support services to ensure websites stay updated, secure, and optimized for clients’ evolving needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+<!-- portfolio -->
+
+<div class="portfolio" id="Portfolio">
+  <div class="hdgs">
+    <h2 style="color: yellow;">Portfolio </h2>
+    <h1 style="font-size: 30px;">Sample Projects </h1>
+  </div>
+  <div class="port-imgs">
+    <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709467932/feane-1_ahomgv.png" >
+        <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709467925/images_6__1709467771030_kclesd.jpg" >
+            <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709467921/images_4__1709467889959_gxpr8m.jpg" >
+                <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709467926/images_4__1709467771498_khemsb.jpg" >
+                <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709470156/images_4__1709470125952_hjfpqh.jpg">
+                <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709470156/images_5__1709470125708_kr6bjf.jpg">
+    
+  </div>
+</div>
+
+
+
+<!-- our pricing -->
+<div id="mainCoantiner">
+  <!--dust particel-->
+  <div class="margin-body">
+  
+  <div>
+    <div class="starsec"></div>
+    <div class="starthird"></div>
+    <div class="starfourth"></div>
+    <div class="starfifth"></div>
+  </div>
+  <!--Dust particle end--->
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div class="title-h1 text-center"><span><span class="light">Our </span> Prices</span></div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-3 col-md-3 pricing-column-wrapper">
+         <div class="pricing-column">
+              <div class="pricing-price-row">
+                <div class="pricing-price-wrapper">
+                  <div class="pricing-price">
+                    <div class="pricing-cost">₹2000</div>
+                    <div class="time">Payout</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-row-title">
+                <div class="pricing_row_title">Basic</div>
+              </div>
+              <figure class="pricing-row">Static website</figure>
+              <figure class="pricing-row"><span>3 Pages design</span></figure>
+              <figure class="pricing-row ">Mobile friendly and responsive</figure>
+              <figure class="pricing-row ">5-6 days delivery time</figure>
+              <figure class="pricing-row strike">10 Rivisions</figure>
+              <figure class="pricing-row strike">seo optimization</figure>
+              <div class="pricing-footer">
+                <div class="gem-button-container gem-button-position-center"><a href="https://wa.me/+916302158556" class="gem-button gem-green">order now</a></div>
+              </div>
+            </div>
+    </div>
+    <div class="col-sm-3 col-md-3 pricing-column-wrapper">
+       <div class="pricing-column">
+              <div class="pricing-price-row">
+                <div class="pricing-price-wrapper">
+                  <div class="pricing-price">
+                    <div class="pricing-cost">₹2500</div>
+                    <div class="time">Payout</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-row-title">
+                <div class="pricing_row_title">Standard</div>
+              </div>
+              <figure class="pricing-row">Standard website</figure>
+              <figure class="pricing-row"><span>4-5 pages design</span></figure>
+              <figure class="pricing-row"><span>10 Rivisions</span></figure>
+              <figure class="pricing-row ">Mobile friendly and responsive</figure>
+              <figure class="pricing-row ">5-6 days delivery time</figure>
+              <figure class="pricing-row ">Basic seo optimization</figure>
+              <figure class="pricing-row strike ">social media integration</figure>
+              <div class="pricing-footer">
+                <div class="gem-button-container gem-button-position-center"><a href="https://wa.me/+916302158556" class="gem-button gem-purpel">order now</a></div>
+              </div>
+            </div>
+    </div>
+    <div class="col-sm-3 col-md-3 pricing-column-wrapper">
+      <div class="pricing-column">
+              <div class="pricing-price-row">
+                <div class="pricing-price-wrapper">
+                  <div class="pricing-price">
+                    <div class="pricing-cost">₹3500</div>
+                    <div class="time">Payout</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-row-title">
+                <div class="pricing_row_title">Premium</div>
+              </div>
+              <figure class="pricing-row"> dynamic Website</figure>
+              <figure class="pricing-row"><span>6-7 pages design </span></figure>
+              <figure class="pricing-row"><span>Mobile friendly and responsive</span></figure>
+              <figure class="pricing-row">5-6 days delivery time</figure>
+              <figure class="pricing-row ">Standard seo optimization</figure>
+              <figure class="pricing-row strike">social media integration</figure>
+              <div class="pricing-footer">
+                <div class="gem-button-container gem-button-position-center">
+                  <a href="https://wa.me/+916302158556" class="gem-button gem-orange">order now</a></div>
+              </div>
+            </div>
+    </div>
+    <div class="col-sm-3 col-md-3 pricing-column-wrapper">
+      <div class="pricing-column">
+              <div class="pricing-price-row">
+                <div class="pricing-price-wrapper">
+                  <div class="pricing-price">
+                    <div style=" " class="pricing-cost">₹4000</div>
+                    <div class="time" style="display:inline-block;">Payout</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-row-title">
+                <div class="pricing_row_title">Advanced</div>
+              </div>
+              <figure class="pricing-row">Advancd dynamic website</figure>
+              <figure class="pricing-row"><span>7-8 pages design</span></figure>
+              <figure class="pricing-row"><span>Mobile friendly and responsive </span></figure>
+              <figure class="pricing-row">5-6 days delivery time</figure>
+              <figure class="pricing-row">advanced seo optimization</figure>
+              <figure class="pricing-row ">social media integration</figure>
+              <div class="pricing-footer">
+                <div class="gem-button-container gem-button-position-center"><a href="https://wa.me/+916302158556" class="gem-button gem-yellow">order now</a></div>
+              </div>
+            </div>
+    </div>
+  </div>
+
+ </div>
+</div>
+
+<!-- Contact us -->
+
+
+<section id="contact">
+  <h1 class="section-header">Contact</h1>
+  <div class="contact-wrapper">
+    
+    <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/xkndblgp" method="POST">
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="" required>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="" required>
+      </div>
+      <textarea class="form-control" rows="5" placeholder="Message" name="message" required></textarea>
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="Send">Send</button>
+    </form>
+    
+    <div class="direct-contact-container">
+      <ul class="contact-list">
+        <li><i class="fa fa-map-marker"></i><span class="contact-text place">India</span></li>
+        <li><i class="fa fa-phone"></i><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+91 6302158556</a></span></li>
+        <li><i class="fa fa-envelope"></i><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">b6154664@gmail.com</a></span></li>
+      </ul>
+      
+      <hr>
+      <!--
+      <ul class="social-media-list">
+        <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank" class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+      <hr>
+      <div class="copyright">&copy; 2024 All Rights Reserved</div>-->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Venkat's Web designing services. All rights reserved.</p>
+  <p>Designed with VDS by Venkat</p>
+</footer>
+
+
+
+</body>
+</html>
+  
+</body>
+</html>
